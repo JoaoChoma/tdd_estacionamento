@@ -1,12 +1,12 @@
 # TDD — Estacionamento (Java 17 + Maven + JUnit 5)
 
-Projeto de referência **com implementação concluída** para orientar a demonstração ao vivo. Na aula, comece com um projeto Maven vazio e escreva os testes antes de criar `Estacionamento`.
+1. Projeto de referência **com implementação concluída** para orientar a demonstração do conteúdo.
 
-## Executar
+2. A ideia é começar com um projeto Maven vazio e escrever os testes antes de criar `Estacionamento`. 
 
-```bash
-mvn test
-```
+3. Use esse repositório para orientar o que você implementou.
+
+---
 
 Abra a pasta do projeto no IntelliJ IDEA como projeto Maven. É necessário Java 17 e Maven (ou usar o Maven integrado da IDE).
 
@@ -26,7 +26,7 @@ Abra a pasta do projeto no IntelliJ IDEA como projeto Maven. É necessário Java
 3. **RN03:** escreva teste que chama `adicionarVeiculo()`. Gere método vazio (RED: ocupação continua zero). Crie campo `ocupacao`, incremente com `ocupacao++` e retorne o campo em `getOcupacao()` (GREEN). Teste duas entradas.
 4. **RN04:** escreva teste de estacionamento lotado. Preencha 3 vagas, tente quarta entrada e verifique `assertThrows(IllegalStateException.class, ...)` **e** ocupação preservada em 3 (RED). Valide antes de incrementar (GREEN). Opcional: extrair validação em método privado (REFACTOR).
 
-**Correções de inconsistências nos slides fornecidos:** a entrada de um veículo aumenta a ocupação em **1**, não em 10; o código correto é `ocupacao++`, não `this.ocupacao += ocupacao`; o slide intitulado RN04 deve também mencionar RN04 no corpo (não RN05). A numeração de CTs deve ser padronizada conforme a aula.
+### Implemente os casos de teste e na sequência implemente o código do produto. 
 
 ## Estrutura
 
@@ -36,4 +36,6 @@ src/main/java/br/uem/tdd/Estacionamento.java
 src/test/java/br/uem/tdd/EstacionamentoTest.java
 ```
 
-O exemplo cobre apenas criação, ocupação, entrada e lotação. Saída de veículos e validação de capacidade não fazem parte desta versão.
+## Atenção
+
+`O exemplo cobre apenas criação, ocupação, entrada e lotação. Saída de veículos e validação de capacidade não fazem parte desta versão.`
