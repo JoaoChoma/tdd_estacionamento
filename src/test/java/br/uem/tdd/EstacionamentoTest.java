@@ -37,6 +37,7 @@ class EstacionamentoTest {
         assertEquals(2, estacionamento.getOcupacao());
     }
 
+    // Solução para RN04
     @Test
     void naoDevePermitirEntradaQuandoLotado() {
         Estacionamento estacionamento = new Estacionamento(3);

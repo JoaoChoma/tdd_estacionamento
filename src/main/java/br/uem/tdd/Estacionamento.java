@@ -16,6 +16,8 @@ public class Estacionamento {
         return ocupacao;
     }
 
+
+    // Solução para RN04
     public void adicionarVeiculo() {
         if (ocupacao >= capacidadeMaxima) {
             throw new IllegalStateException("Estacionamento lotado");
